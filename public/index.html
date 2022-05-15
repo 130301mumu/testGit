@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
+</head>
+
+<body>
+    <!-- 当浏览器检测不到 JavaScript 时展示标签 -->
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+
+    <div id="app"></div>
+    <!-- 插件html-webpack-plugin 的作用：
+  1. 为我们自动生成一个Index文件（ 可以指定），JS的引入路径  根据 output定 
+  2.将打包的 JS文件（src/main作为入口）,自动的通过script 标签添加到 indexed.html 的body中 -->
+</body>
+
+</html>
